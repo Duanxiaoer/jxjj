@@ -1,0 +1,200 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>填写家教信息</title>
+<link rel="stylesheet" media="screen" href="css/css.css" />
+</head>
+<body>
+<div style="display:none">
+
+</div>
+<form accept-charset="UTF-8" action="studentHome.jsp" method="post" id="msform">
+	<!-- progressbar -->
+	<ul id="progressbar">
+		<li class="active">基本信息</li>
+		<li>要求</li>
+		<li>联系方式</li>
+	</ul>
+	<!-- fieldsets -->
+	<fieldset>
+		<h2 class="fs-title">填写上课时间和地点等信息</h2>
+        <h3 class="fs-subtitle">真实的信息有利于帮您找到最好的老师</h3>
+        <table>
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">时间:</h2></td>
+                <td>
+                    <select name="time" style="width: 100%;height: auto" class="select" required>
+                        <option value="-1">请选择</option>
+                        <option value="8">8:00</option>
+                        <option value="9">9:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                        <option value="20">20:00</option>
+                        <option value="21">21:00</option>
+                        <option value="0">其他</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">年级:</h2></td>
+                <td>
+                    <select name="class" style="width: 100%;height: auto" class="select">
+                        <option value="-1">请选择</option>
+                        <option value="1">一年级</option>
+                        <option value="2">二年级</option>
+                        <option value="3">三年级</option>
+                        <option value="4">四年级</option>
+                        <option value="5">五年级</option>
+                        <option value="6">六年级</option>
+                        <option value="7">初一</option>
+                        <option value="8">初二</option>
+                        <option value="9">初三</option>
+                        <option value="10">高一</option>
+                        <option value="11">高二</option>
+                        <option value="12">高三</option>
+                        <option value="0">其他</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">科目:</h2></td>
+                <td>
+                    <select name="subjects" style="width: 100%;height: auto" class="select">
+                        <option value="请选择">-请选择-</option>
+                        <option value="数学">数学</option>
+                        <option value="英语">英语</option>
+                        <option value="语文">语文</option>
+                        <option value="物理">物理</option>
+                        <option value="化学">化学</option>
+                        <option value="生物">生物</option>
+                        <option value="地理">地理</option>
+                        <option value="历史">历史</option>
+                        <option value="政治">政治</option>
+                        <option value="艺术">艺术类</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">课时:</h2></td>
+                <td>
+                    <select name="total-time" style="width: 100%;height: auto" class="select">
+                        <option value="-1">-请选择-</option>
+                        <option value="2">1h</option>
+                        <option value="3">1.5h</option>
+                        <option value="4">2h</option>
+                        <option value="5">2.5h</option>
+                        <option value="6">3h</option>
+                        <option value="0">其他</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">目前<br>成绩:</h2></td>
+                <td>
+                    <input type="text" name="grade" placeholder="如：109/150" />
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">目标<br>成绩:</h2></td>
+                <td>
+                    <input type="text" name="target-grade" placeholder="如：139/150" />
+                </td>
+            </tr>
+
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">地点:</h2></td>
+                <td>
+                    <input type="text" name="location" placeholder="如：世纪城-盛南领地" />
+                </td>
+            </tr>
+        </table>
+        <input type="button" name="next" class="next action-button" value="下一步" />
+	</fieldset>
+	<fieldset>
+		<h2 class="fs-title">对老师的要求</h2>
+		<h3 class="fs-subtitle">合适的老师更能激发孩子的学习积极性</h3>
+        <table>
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">性别:</h2></td>
+                <td>
+                    <select name="sex" style="width: 100%;height: auto" class="select">
+                        <option value="-1">请选择</option>
+                        <option value="均可">男女均可</option>
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">类型:</h2></td>
+                <td>
+                    <select name="education" style="width: 100%;height: auto" class="select">
+                        <option value="-1">请选择</option>
+                        <option value="大学生-专业相关">大学生-专业相关</option>
+                        <option value="大学生-师范类专业相关">大学生-师范类专业相关</option>
+                        <option value="大学生-一本及以上">大学生-一本及以上</option>
+                        <option value="大学生-二本及以上">大学生-二本及以上</option>
+                        <option value="在职老师">在职老师</option>
+                        <option value="均可">均可</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">薪酬:</h2></td>
+                <td>
+                    <input name="payment" placeholder="如：70元/小时">
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">其他<br>要求:</h2></td>
+                <td>
+                    <textarea style="height: 100px" name="demand-other" placeholder="如：希望老师性格开朗，有耐心"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">其他<br>情况<br>补充:</h2></td>
+                <td>
+                    <textarea style="height: 100px" name="replenish" placeholder="如：孩子学习总是粗心大意、做错过的题目还是会错、上课不专心等"></textarea>
+                </td>
+            </tr>
+        </table>
+        <input type="button" name="previous" class="previous action-button" value="上一步" />
+        <input type="button" name="next" class="next action-button" value="下一步" />
+	</fieldset>
+	<fieldset>
+		<h2 class="fs-title">联系方式</h2>
+		<h3 class="fs-subtitle">请填写能及时取得联系的电话</h3>
+        <table>
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">称呼:</h2></td>
+                <td>
+                    <input name="name" placeholder="如：李妈妈">
+                </td>
+            </tr>
+            <tr>
+                <td align="left"><h2 class="fs-subtitle-1">联系<br>电话:</h2></td>
+                <td>
+                    <input name="tel" placeholder="如：1308127XXXX">
+                </td>
+            </tr>
+        </table>
+		<input type="button" name="previous" class="previous action-button" value="上一步" />
+		<input type="submit" name="submit" class="action-button" value="提交" />
+	</fieldset>
+</form>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.easing.min.js" type="text/javascript"></script>
+<script src="js/jQuery.time.js" type="text/javascript"></script>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
